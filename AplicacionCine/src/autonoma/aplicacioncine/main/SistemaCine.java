@@ -14,26 +14,6 @@ import autonoma.aplicacioncine.models.Venta;
  */
 public class SistemaCine {
     public static void main(String[] args) {
-        // Crear película
-        Pelicula pelicula = new Pelicula("Interestelar", 10000);
-
-        // Crear función (primera función a las 8:00)
-        Funcion funcion = new FuncionP("08:00");
-
-        // Crear usuario (niño)
-        IUsuario usuario = new UsuarioNino();
-
-        // Crear boleta
-        Boleta boleta = new Boleta(pelicula, funcion, usuario);
-
-        // Crear venta y agregar boleta
-        Venta venta = new Venta();
-        venta.agregarBoleta(boleta);
-
-        // Crear factura con número y hora de emisión
-        Factura factura = new Factura(venta, "F001", 8);
-
-        // Imprimir factura
-        factura.imprimirFactura();
+        
     }
 }
