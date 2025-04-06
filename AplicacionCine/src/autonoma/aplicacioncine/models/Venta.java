@@ -28,6 +28,7 @@ public class Venta {
     }
 
     public void mostrarDetalleVenta() {
+        
         System.out.println("Detalle de la venta:");
         for (Boleta boleta : boletas) {
             System.out.println("---------------------------");
@@ -35,6 +36,7 @@ public class Venta {
         }
         System.out.println("---------------------------");
         System.out.println("Total a pagar: $" + calcularTotal());
+        
     }
 
     public List<Boleta> getBoletas() {
