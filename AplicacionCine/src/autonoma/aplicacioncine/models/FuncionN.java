@@ -18,6 +18,7 @@ public class FuncionN extends Funcion {
 
     @Override
     public String getNombre() {
-        return "Función de la noche";
+        return " funcion de la noche ";
     }
+    
 }
