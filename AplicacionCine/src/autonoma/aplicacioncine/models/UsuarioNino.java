@@ -14,7 +14,7 @@ public class UsuarioNino implements IUsuario
 
     @Override
     public String getTipo() {
-        return "Niño";
+        return " niño ";
     }
     
 }
