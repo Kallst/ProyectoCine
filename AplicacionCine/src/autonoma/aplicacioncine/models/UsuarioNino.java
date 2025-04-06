@@ -4,7 +4,7 @@ package autonoma.aplicacioncine.models;
  *
  * @author LAPTOP
  */
-public class UsuarioNino implements IUsuario 
+public class UsuarioNino extends IUsuario 
 {
 
     @Override

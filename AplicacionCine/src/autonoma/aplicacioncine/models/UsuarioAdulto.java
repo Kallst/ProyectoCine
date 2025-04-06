@@ -4,7 +4,7 @@ package autonoma.aplicacioncine.models;
  *
  * @author LAPTOP
  */
-public class UsuarioAdulto implements IUsuario{
+public class UsuarioAdulto extends IUsuario{
     @Override
     public int getDescuento() {
         return 0;

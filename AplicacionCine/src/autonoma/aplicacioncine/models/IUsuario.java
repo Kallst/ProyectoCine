@@ -1,7 +1,7 @@
 package autonoma.aplicacioncine.models;
 
-public interface IUsuario 
+public abstract class IUsuario 
 {
-    public int getDescuento ();
-    public String getTipo();
+    public abstract int getDescuento ();
+    public abstract String getTipo();
 }
