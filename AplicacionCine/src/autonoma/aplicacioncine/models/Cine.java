@@ -7,11 +7,16 @@ import java.util.List;
  * @author LAPTOP
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cine {
     private List<Pelicula> cartelera;
+    private List<Usuario> usuariosRegistrados;
 
     public Cine() {
         this.cartelera = new ArrayList<>();
+        this.usuariosRegistrados = new ArrayList<>();
     }
 
     // --- Gestión de cartelera ---
@@ -32,7 +37,29 @@ public class Cine {
                 return pelicula;
             }
         }
-        return null; // No encontrada
+        return null;
+    }
+
+    // --- Gestión de usuarios ---
+    public void registrarUsuario(Usuario usuario) {
+        usuariosRegistrados.add(usuario);
+    }
+
+    public void mostrarUsuarios() {
+        System.out.println("Usuarios registrados:");
+        for (int i = 0; i < usuariosRegistrados.size(); i++) {
+            Usuario u = usuariosRegistrados.get(i);
+            System.out.println((i + 1) + ". " + u.getTipo() + " - Descuento: $" + u.getDescuento());
+        }
+    }
+
+    public Usuario obtenerUsuarioPorTipo(String tipo) {
+        for (Usuario usuario : usuariosRegistrados) {
+            if (usuario.getTipo().equalsIgnoreCase(tipo)) {
+                return usuario;
+            }
+        }
+        return null;
     }
 
     // --- Venta de boletas ---
@@ -45,4 +72,3 @@ public class Cine {
         return new Factura(venta, numeroFactura, hora);
     }
 }
-
