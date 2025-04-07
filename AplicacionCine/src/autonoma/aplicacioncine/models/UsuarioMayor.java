@@ -6,8 +6,8 @@ package autonoma.aplicacioncine.models;
  */
 public class UsuarioMayor extends Usuario {
 
-    public UsuarioMayor(String nombre) {
-        super(nombre);
+    public UsuarioMayor(String nombre, String tipo) {
+        super(nombre, tipo);
     }
     
     @Override

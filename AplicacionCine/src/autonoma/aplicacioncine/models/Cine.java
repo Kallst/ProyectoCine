@@ -46,12 +46,12 @@ public class Cine {
     }
 
     public void mostrarUsuarios() {
-        System.out.println("Usuarios registrados:");
-        for (int i = 0; i < usuariosRegistrados.size(); i++) {
-            Usuario u = usuariosRegistrados.get(i);
-            System.out.println((i + 1) + ". " + u.getTipo() + " - Descuento: $" + u.getDescuento());
-        }
+    System.out.println("Usuarios registrados:");
+    for (int i = 0; i < usuariosRegistrados.size(); i++) {
+        Usuario u = usuariosRegistrados.get(i);
+        System.out.println((i + 1) + ". " + u.getNombre() + " (" + u.getTipo() + ") - Descuento: $" + u.getDescuento());
     }
+}
 
     public Usuario obtenerUsuarioPorTipo(String tipo) {
         for (Usuario usuario : usuariosRegistrados) {

@@ -7,10 +7,10 @@ package autonoma.aplicacioncine.models;
 public class UsuarioNino extends Usuario 
 {    
 
-    public UsuarioNino(String nombre) {
-        super(nombre);
+    public UsuarioNino(String nombre, String tipo) {
+        super(nombre, tipo);
     }
-
+    
     @Override
     public int getDescuento() {
         return 500;

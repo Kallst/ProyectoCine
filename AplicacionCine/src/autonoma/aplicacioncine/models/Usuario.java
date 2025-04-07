@@ -6,21 +6,21 @@ package autonoma.aplicacioncine.models;
  */
 public abstract class Usuario {
     protected String nombre;
+    protected String tipo;
 
-    public Usuario(String nombre) {
+    public Usuario(String nombre, String tipo) {
         this.nombre = nombre;
+        this.tipo = tipo;
     }
-    
-    public abstract int getDescuento();
-    public abstract String getTipo();
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String getTipo() {
+        return tipo;
     }
-    
-    
+
+    public abstract int getDescuento();
 }
+
