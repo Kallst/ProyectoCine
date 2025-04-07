@@ -8,10 +8,10 @@ package autonoma.aplicacioncine.models;
 public class Boleta {
     private Pelicula pelicula;
     private Funcion funcion;
-    private IUsuario usuario;
+    private Usuario usuario;
     private int precioFinal;
 
-    public Boleta(Pelicula pelicula, Funcion funcion, IUsuario usuario) {
+    public Boleta(Pelicula pelicula, Funcion funcion, Usuario usuario) {
         this.pelicula = pelicula;
         this.funcion = funcion;
         this.usuario = usuario;
