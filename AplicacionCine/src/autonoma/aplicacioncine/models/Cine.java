@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cine {
+    
     private List<Pelicula> cartelera;
     private List<Usuario> usuariosRegistrados;
 
@@ -53,14 +54,14 @@ public class Cine {
     }
 }
 
-    public Usuario obtenerUsuarioPorTipo(String tipo) {
-        for (Usuario usuario : usuariosRegistrados) {
-            if (usuario.getTipo().equalsIgnoreCase(tipo)) {
-                return usuario;
-            }
+    public Usuario obtenerUsuarioPorNombre(String nombre) {
+    for (Usuario usuario : usuariosRegistrados) {
+        if (usuario.getNombre().equalsIgnoreCase(nombre)) {
+            return usuario;
         }
-        return null;
     }
+    return null;
+}
 
     // --- Venta de boletas ---
     public Boleta venderBoleta(Pelicula pelicula, Funcion funcion, Usuario usuario) {

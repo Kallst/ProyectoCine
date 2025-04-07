@@ -98,15 +98,14 @@ public class SistemaCine {
                             yield null;
                         }
                     };
-                    if (funcion == null) break;
-                    scanner.ignore();
-                    System.out.print("Tipo de usuario (Niño, Adulto, Mayor): ");
-                    String tipoUsuario = scanner.nextLine();
-                    Usuario usu = cine.obtenerUsuarioPorTipo(tipoUsuario);
+                    System.out.print("Nombre del usuario que compra la boleta: ");
+                    String nombreU = scanner.nextLine();
+                    Usuario usu = cine.obtenerUsuarioPorNombre(nombreU);
                     if (usu == null) {
                         System.out.println("Usuario no registrado.");
                         break;
-                    }
+}
+
 
                     Boleta boleta = cine.venderBoleta(pelicula, funcion, usu);
                     venta.agregarBoleta(boleta);
